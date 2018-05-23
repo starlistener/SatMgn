@@ -271,16 +271,18 @@ namespace WHC.WareHouseMis.UI
             // lblCalendar
             // 
             this.lblCalendar.BackColor = System.Drawing.Color.Transparent;
-            this.lblCalendar.Location = new System.Drawing.Point(70, 405);
+            this.lblCalendar.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblCalendar.Location = new System.Drawing.Point(96, 405);
             this.lblCalendar.Name = "lblCalendar";
-            this.lblCalendar.Size = new System.Drawing.Size(343, 25);
+            this.lblCalendar.Size = new System.Drawing.Size(352, 25);
             this.lblCalendar.TabIndex = 6;
+            this.lblCalendar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lnkSecurity
             // 
             this.lnkSecurity.AutoSize = true;
             this.lnkSecurity.BackColor = System.Drawing.Color.Transparent;
-            this.lnkSecurity.Location = new System.Drawing.Point(409, 414);
+            this.lnkSecurity.Location = new System.Drawing.Point(476, 416);
             this.lnkSecurity.Name = "lnkSecurity";
             this.lnkSecurity.Size = new System.Drawing.Size(102, 14);
             this.lnkSecurity.TabIndex = 7;
@@ -435,6 +437,7 @@ namespace WHC.WareHouseMis.UI
             //当前日期显示
             //CCalendar cal = new CCalendar();
             //this.lblCalendar.Text = cal.GetDateInfo(System.DateTime.Now).Fullinfo;
+            this.lblCalendar.Text = "研制单位：陆军工程大学";
             AppConfig config = new AppConfig();
             this.Text = config.AppName;
             this.lblTitle.Text = config.AppName;
