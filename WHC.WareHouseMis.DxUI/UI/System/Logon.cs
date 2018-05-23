@@ -430,9 +430,11 @@ namespace WHC.WareHouseMis.UI
 			ToolTip tp = new ToolTip();
 			tp.SetToolTip(this.cmbzhanhao, "首次登录的默认账号为:admin");
 			tp.SetToolTip(this.tbPass, "首次登录的默认密码为空, \r\n 以后请更改默认密码！");
-			
-			CCalendar cal = new CCalendar();
-			this.lblCalendar.Text = cal.GetDateInfo(System.DateTime.Now).Fullinfo;
+
+
+            //当前日期显示
+            //CCalendar cal = new CCalendar();
+            //this.lblCalendar.Text = cal.GetDateInfo(System.DateTime.Now).Fullinfo;
             AppConfig config = new AppConfig();
             this.Text = config.AppName;
             this.lblTitle.Text = config.AppName;
