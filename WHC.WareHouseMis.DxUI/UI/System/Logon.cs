@@ -434,7 +434,7 @@ namespace WHC.WareHouseMis.UI
 			tp.SetToolTip(this.tbPass, "首次登录的默认密码为空, \r\n 以后请更改默认密码！");
 
 
-            //当前日期显示
+            //当前日期显示 test
             //CCalendar cal = new CCalendar();
             //this.lblCalendar.Text = cal.GetDateInfo(System.DateTime.Now).Fullinfo;
             this.lblCalendar.Text = "研制单位：陆军工程大学";
